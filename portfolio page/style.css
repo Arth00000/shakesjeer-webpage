@@ -1,0 +1,303 @@
+body ,ul ,li , h1,h2,a{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    /* background-image: url("img/doodle.jpg"); */
+    background-color: rgb(253, 248, 228) ;
+}
+header{
+    background-color: rgb(34, 29, 21);
+    /* background-image: url("img/cat1.jpg"); */
+    /* opacity: 20%; */
+    padding: 0px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    opacity: 81% ;
+    font-size: 10px;
+   
+}
+header h1{
+    color: rgb(255, 255, 255);
+    border: 3px rgb(253, 204, 253) solid;
+    padding: 4px 15px ;
+    margin: 4px  10px;
+    display: inline-block;
+    font-weight: 900;
+    font-style: italic;
+}
+.banner{
+    position: relative;
+}
+.banner img{
+    max-width: 100%;
+}
+.banner .welcome{
+    position: absolute ;
+    padding: 10px ;
+    left: 0px;
+    top: 30%;
+    
+    
+}
+.banner h2{
+    font-size: 74px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.404);
+}
+.banner .a{
+    font-size: 1.3em;
+    color: rgb(255, 197, 247);
+    font-family:'Trebuchet MS';
+    text-decoration: underline;
+}
+.banner .b{
+    font-size: 1.3em;
+    color: rgb(244, 255, 194);
+    font-family: Verdana;
+    text-decoration: underline;
+}
+
+nav{
+    background-color: black;
+    color: rgb(255, 238, 205);
+    padding: 10px;
+    position: sticky;
+    top: 50px;
+} 
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    padding: 10px 85px; 
+}
+nav li{
+    width: 25%;
+    display: inline-block;
+    font-size: 30px;
+    text-align: center;
+}
+nav li img{
+    border-radius: 20px;
+}
+nav li a{
+    text-decoration: underline;
+    color: palegoldenrod;
+    /* font-weight: bold; */
+    font-family: fantasy;
+    letter-spacing: 2px;
+    /* font-family:cursive; */
+}
+.recruit a{
+    color: rgb(250, 103, 103);
+    text-decoration: none;
+    border: 2px white solid;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0px 40px;
+    box-sizing: border-box;
+}
+main p{
+    column-count: 2;
+    column-gap: 35px;
+    text-align: left;
+}
+article h2{
+    color: rebeccapurple;
+    font-size: 45px;
+}
+article p{
+    line-height: 2em;
+    font-size: 17px;
+    color:rgb(36, 30, 30);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.images{
+    text-align: center;
+    margin: 80px 0px ;
+    white-space: nowrap;
+}
+.images li{
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5% ;
+}
+.images li img{
+    max-width: 100%;
+}
+section.join{
+    background-color:lightgray;
+
+    text-align: center;
+    padding: 60px 20px;
+    color: slategrey ;
+    background-image: url("/img/doodle.jpg");
+}
+.join h2{
+    font-size: 38px;
+    color: rgb(53, 49, 49);
+    font-family: cursive;
+}
+.join p{
+    color: rgb(30, 39, 43);
+    font-family: cursive;
+    font-size: 20px;
+}
+form input{
+    margin: 20px 0px;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 19px;
+    border: 4px solid rgb(255, 123, 123);
+
+}
+footer{
+    background-image: url("img/bg5.jpg");
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+/* psuedo classes */
+nav li a:hover{
+    /* background-color: peachpuff;
+    color: black; */
+    font-size: 32px;
+    color: rgb(204, 253, 90);
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 10px;
+    text-decoration: none;  
+}
+.images li:hover{
+    position: relative;
+    top: -15px;
+    left: 20px;
+}
+header h1:hover{
+    color: seagreen;
+    border: dashed 1px white;
+}
+.banner .a:hover{
+    color: rgb(244, 255, 194);
+}
+.banner .b:hover{
+    color: rgb(255, 197, 247);
+}
+.join h2:hover{
+    color: tomato;
+}
+form input:focus{
+    border: 4px dashed lightpink;
+}
+form input:valid{
+    border: 4px solid lightgreen;
+}
+p::selection{
+    background-color: lime;
+    color: black;
+}
+
+@media screen and (max-width: 900px){
+    .banner .welcome h2{
+        font-size: 40px;
+        
+    }
+    nav li{
+        font-size: 19px;
+    }
+    nav ul{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    main p{
+        column-count: 1;
+    }
+
+}
+@media screen and (max-width: 750px){
+    nav{
+        background-color: black;
+        color: rgb(255, 238, 205);
+        padding: 10px;
+        position:sticky;
+        top: 50px;
+    }
+    .banner .welcome{
+        text-align: center;
+    }
+    .banner .welcome h2{
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    nav li{
+        font-size: 15px;
+    }
+    nav ul{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    header {
+        font-size: 4px;
+    }
+    header h1{
+        border: 1px purple solid;
+    }
+    nav{
+        top:28px;
+    }
+    .banner .welcome br{
+        /* display: none; */
+    }
+    main{
+        margin-top: 27px;
+    }
+    main article h2{
+        font-size: 32px;
+    }
+    main p{
+        column-count: 1;
+    }
+    .images li{
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+    section.join{
+        background-color:lightgray;
+        text-align: center;
+        padding: 30px 20px;
+        color: slategrey ;
+    }
+    .join h2{
+        font-size: 30px;
+    }
+    form input{
+        margin: 20px 0px;
+        padding: 10px 20px;
+        font-size: 19px;
+        border-radius: 19px;
+        border: 3px solid white;
+    }
+    footer{
+        background-image: url("img/bg5.jpg");
+        color: white;
+        padding: 2px;
+        font-size: 13px;
+        text-align: center;
+    }
+    
+
+}
